@@ -10,7 +10,7 @@ html, body {
   font-family: "Poppins", sans-serif;
 }
 
-h1, h2 {
+h1, h3, h2 {
   font-size: 2.3rem;
   font-family: "Playfair Display", serif;
 }
@@ -18,6 +18,10 @@ h1, h2 {
 h2 {
   font-size: 1.8rem;
   width: 10ch;
+}
+
+h3 {
+  font-size: 1.7rem;
 }
 
 p {
@@ -31,6 +35,11 @@ button {
   background-color: #E03C3C;
   color: #fff;
   border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #567EF5;
 }
 
 section {
@@ -48,7 +57,7 @@ section {
   margin-top: 1rem;
 }
 .heroSection button {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 .heroSection .imgContainer {
   z-index: -1;
@@ -63,21 +72,44 @@ section {
   height: 60%;
 }
 
-.sectionDetails h2 {
+.sectionDetails h2, .sectionInfo h2 {
   font-size: 2.3rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
-.sectionDetails p {
+.sectionDetails p, .sectionInfo p {
   margin-top: 0.5rem;
 }
-.sectionDetails .imgContainer {
+.sectionDetails .imgContainer, .sectionInfo .imgContainer {
   margin-top: 2rem;
   background-image: url(../images/action.webp);
   background-position: 35% center;
   background-size: cover;
   width: 100%;
   height: 15rem;
+}
+
+.sectionInfo h2 {
+  margin-top: 6rem;
+}
+.sectionInfo .imgContainer {
+  background-image: url(../images/metallo.webp);
+}
+.sectionInfo h3 {
+  margin-block: 1rem 0.7rem;
+}
+.sectionInfo button {
+  margin-top: 2rem;
+  background-color: #2A2A2A;
+}
+
+.sectionInfo + .sectionInfo .imgContainer {
+  margin-top: 6rem;
+  background-image: url(../images/dentro.webp);
+}
+.sectionInfo + .sectionInfo a {
+  display: block;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
