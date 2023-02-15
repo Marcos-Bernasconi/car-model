@@ -20,6 +20,11 @@ html, body {
   color: #2A2A2A;
 }
 
+.navDesktop ul li, button {
+  cursor: pointer;
+  z-index: 1;
+}
+
 .desktop {
   display: none;
 }
@@ -175,7 +180,7 @@ footer h3, footer p {
   padding-left: 1rem;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
   :root {
     --font-huge: 3rem;
     --font-big: 1.7rem;
@@ -297,7 +302,7 @@ footer h3, footer p {
   }
   .sectionInfo h3 {
     width: fit-content;
-    margin-bottom: 1rem;
+    margin-block: 0 1rem;
   }
   .sectionInfo .imgContainer {
     display: inline-block;
@@ -322,6 +327,22 @@ footer h3, footer p {
   }
   .sectionInfo + .sectionInfo .imgContainer {
     margin-top: 0;
+  }
+  footer {
+    margin-top: 11rem;
+  }
+  footer.desktop {
+    padding-left: 10%;
+  }
+  footer.desktop .linkContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 6rem;
+  }
+  footer.desktop .linkContainer p {
+    font-size: 1rem;
+    cursor: pointer;
   }
 }
 
