@@ -193,6 +193,9 @@ footer h3, footer p {
   p {
     line-height: 2.1rem;
   }
+  a {
+    font-size: var(--font-medium);
+  }
   .desktop {
     display: block;
   }
@@ -213,7 +216,7 @@ footer h3, footer p {
   :root {
     --font-huge: 67px;
     --font-big: 38px;
-    --font-intermediate: 28px;
+    --font-intermediate: 33px;
     --font-medium: 1.2rem;
     --text-lenght: 50ch;
     --text-lenght-short: 10ch;
@@ -255,6 +258,7 @@ footer h3, footer p {
     position: relative;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
     gap: 4rem;
   }
   .sectionDetails.desktop .imgContainer, .desktop.sectionInfo .imgContainer {
@@ -283,6 +287,41 @@ footer h3, footer p {
     background-position: center;
     width: auto;
     height: 20rem;
+  }
+  .sectionInfo {
+    width: 80vw;
+  }
+  .sectionInfo h2 {
+    width: fit-content;
+    margin-block: 8rem 4rem;
+  }
+  .sectionInfo h3 {
+    width: fit-content;
+    margin-bottom: 1rem;
+  }
+  .sectionInfo .imgContainer {
+    display: inline-block;
+    width: 40rem;
+    height: 25rem;
+    margin-top: 0;
+  }
+  .sectionInfo .textContainer {
+    display: inline-block;
+  }
+  .flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .sectionInfo + .sectionInfo {
+    margin-top: 8rem;
+  }
+  .sectionInfo + .sectionInfo .flex {
+    flex-direction: row-reverse;
+  }
+  .sectionInfo + .sectionInfo .imgContainer {
+    margin-top: 0;
   }
 }
 
