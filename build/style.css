@@ -48,7 +48,7 @@ html, body {
 .data {
   position: absolute;
   right: 0;
-  bottom: 2vh;
+  bottom: 4vh;
 }
 
 h1, h2, h3 {
@@ -190,6 +190,9 @@ footer h3, footer p {
   }
 }
 @media screen and (min-width: 1000px) {
+  p {
+    line-height: 2.1rem;
+  }
   .desktop {
     display: block;
   }
@@ -243,6 +246,43 @@ footer h3, footer p {
   }
   .btn2 + button {
     margin-left: 2rem;
+  }
+  .sectionDetails.desktop, .desktop.sectionInfo {
+    margin-top: 5rem;
+    width: 90vw;
+    height: auto;
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4rem;
+  }
+  .sectionDetails.desktop .imgContainer, .desktop.sectionInfo .imgContainer {
+    margin-top: 0;
+    display: inline-block;
+    padding-left: 5%;
+    background-image: url(../images/action.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: auto;
+  }
+  .textContainer {
+    display: inline-block;
+  }
+  .textContainer h2 {
+    margin-top: 0;
+    width: fit-content;
+  }
+  .imgContainer2 {
+    margin-top: 4rem;
+    background-image: url(../images/muso.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 20rem;
   }
 }
 
