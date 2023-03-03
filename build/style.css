@@ -50,6 +50,18 @@ html, body {
   font-size: 1.2rem;
 }
 
+.navMobile {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 1rem;
+}
+.navMobile svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .data {
   position: absolute;
   right: 0;
