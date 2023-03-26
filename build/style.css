@@ -14,13 +14,15 @@
   --text-lenght-short: 10ch;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-  color: #2A2A2A;
+  color: #2a2a2a;
 }
 
-.navDesktop ul li, button {
+.navDesktop ul li,
+button {
   cursor: pointer;
   z-index: 1;
 }
@@ -39,7 +41,7 @@ html, body {
 .navDesktop ul {
   display: flex;
   justify-content: end;
-  gap: 10rem;
+  gap: 10%;
 }
 .navDesktop li {
   list-style-type: none;
@@ -68,7 +70,9 @@ html, body {
   bottom: 4vh;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
 }
@@ -94,20 +98,20 @@ p {
 button {
   font-size: var(--font-medium);
   padding: 0.7rem 2rem;
-  background-color: #E03C3C;
+  background-color: #e03c3c;
   color: #fff;
-  border: solid 2px #E03C3C;
+  border: solid 2px #e03c3c;
 }
 
 .btn2 {
   background-color: transparent;
-  border: solid 2px #2A2A2A;
-  color: #2A2A2A;
+  border: solid 2px #2a2a2a;
+  color: #2a2a2a;
 }
 
 a {
   text-decoration: none;
-  color: #567EF5;
+  color: #567ef5;
 }
 
 section {
@@ -168,8 +172,8 @@ section {
 }
 .sectionInfo button {
   margin-top: 2rem;
-  border-color: #2A2A2A;
-  background-color: #2A2A2A;
+  border-color: #2a2a2a;
+  background-color: #2a2a2a;
 }
 
 .sectionInfo + .sectionInfo .imgContainer {
@@ -182,16 +186,23 @@ section {
 }
 
 footer {
-  background-color: #2A2A2A;
+  background-color: #2a2a2a;
   color: #fff;
   margin-top: 4rem;
   padding-block: 2rem;
 }
-footer h3, footer p {
+footer h3,
+footer p {
   margin-top: 1rem;
   padding-left: 1rem;
 }
 
+@media screen and (min-width: 500px) {
+  .heroSection .imgContainer {
+    width: 130vw;
+    left: -30%;
+  }
+}
 @media screen and (min-width: 700px) {
   :root {
     --font-huge: 3rem;
@@ -216,19 +227,15 @@ footer h3, footer p {
   .desktop {
     display: block;
   }
+  .desktop.data {
+    display: none;
+  }
   .mobile {
     display: none;
   }
   .info {
     font-size: 1.5rem;
     font-weight: 600;
-  }
-  .data {
-    width: 90vw;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    left: 0;
   }
   :root {
     --font-huge: 67px;
@@ -248,17 +255,17 @@ footer h3, footer p {
     width: 100%;
   }
   .heroSection {
-    padding-top: 10rem;
+    padding-top: 7rem;
     padding-left: 5%;
   }
   .heroSection h1 {
     width: 15ch;
   }
   .heroSection .imgContainer {
-    width: 100vw;
+    width: 150vw;
     height: 100vh;
     top: 0;
-    left: 0;
+    left: -5rem;
   }
   .heroSection button {
     margin-top: 4rem;
@@ -355,6 +362,26 @@ footer h3, footer p {
   footer.desktop .linkContainer p {
     font-size: 1rem;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 1100px) and (min-height: 700px) {
+  .desktop.data {
+    width: 90vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .heroSection {
+    padding-top: 10rem;
+  }
+  .heroSection .imgContainer {
+    width: 120vw;
+    height: 100vh;
+    top: 0;
+    left: 0rem;
   }
 }
 
